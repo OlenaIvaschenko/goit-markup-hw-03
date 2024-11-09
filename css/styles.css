@@ -140,11 +140,18 @@ font-family: "Raleway", sans-serif;
             text-align: center;
             color: #fff;
             margin-bottom: 48px;
+            width: 496px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
 
     }
 
 .hero-button {
-     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: nowrap;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
@@ -153,7 +160,14 @@ font-family: "Raleway", sans-serif;
             cursor: pointer;
         background-color: #4d5ae5; 
         margin: 0 auto;
-        display: block;
+       
+        border-radius: 4px;
+padding: 16px 32px;
+/* width: 169px; */
+height: 56px;
+
+
+
         
     }
         
