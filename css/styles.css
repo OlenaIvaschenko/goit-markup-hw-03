@@ -22,6 +22,18 @@ a {
 }
 
 /* common */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+  }
 
 .container {
     max-width: 1158px;
@@ -79,13 +91,18 @@ font-family: "Raleway", sans-serif;
     
     font-style: normal;
     margin-left: auto;
-
-   .contacts-list {
-    display: flex;
-    align-items: center; 
-    gap: 40px;
-   } 
 }
+
+    .contacts-list {
+        display: flex;
+        align-items: center; 
+        gap: 40px;
+       } 
+
+
+
+
+
 .contacts-link {
     display: block;
     padding: 24px 0;
@@ -108,6 +125,11 @@ font-family: "Raleway", sans-serif;
 .hero {
     background-color: #2e2f42;
 }
+.hero-container {
+    padding-top: 212px;
+    padding-bottom: 164px;
+
+}
 
 .hero-text {
         
@@ -117,6 +139,8 @@ font-family: "Raleway", sans-serif;
             letter-spacing: 0.02em;
             text-align: center;
             color: #fff;
+            margin-bottom: 48px;
+
     }
 
 .hero-button {
@@ -128,6 +152,9 @@ font-family: "Raleway", sans-serif;
             color: #fff;  
             cursor: pointer;
         background-color: #4d5ae5; 
+        margin: 0 auto;
+        display: block;
+        
     }
         
 .hero-button:hover,
@@ -140,6 +167,12 @@ background-color: #404bbf;
 /* Section benefits */
 
 .benefits {}
+
+.benefits-container {
+    padding-top: 120px;
+    padding-bottom:120px;
+   
+}
 .benefits-title{
    
         font-weight: 700;
@@ -150,9 +183,16 @@ background-color: #404bbf;
         color: #2e2f42;
         text-transform: capitalize;
 }
-.benefits-list {}
 
-.benefits-item {}
+.benefits-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+.benefits-item {
+width: 264px
+}
 
 .benefits-subtitle {
    
@@ -161,6 +201,7 @@ background-color: #404bbf;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        padding-bottom: 2px;
 }
 
 .benefits-text {
@@ -175,6 +216,8 @@ background-color: #404bbf;
 
 .team {
 background-color: #f4f4fd;
+padding-top: 120px;
+padding-bottom:120px;
 }
 
 .team-title
@@ -187,14 +230,35 @@ background-color: #f4f4fd;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-bottom: 72px; 
 }
-.team-list {}
+.team-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 24px;
+    justify-content: center;
+
+}
 
 .team-item {
     background-color: #fff;
+    width: calc((100% - 3 * 24px) / 4); 
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 32px;
+    
+
+    /* 
+  padding: 28px 23px;
+  border-radius: 15px;
+  border: 1px solid transparent;*/
 }
 
-.team-image {}
+.team-image {
+    display: block; 
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 32px;
+}
 
 .team-subtitle {
 
@@ -203,7 +267,9 @@ background-color: #f4f4fd;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #2e2f42;}
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
 
 .team-text {
     
@@ -217,7 +283,11 @@ background-color: #f4f4fd;
 
 /* Section Portfolio */
 
-.portfolio {}
+.portfolio {
+padding-top: 120px;
+padding-bottom:120px;
+}
+
 
 
 .portfolio-title {
@@ -229,12 +299,31 @@ background-color: #f4f4fd;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 60px 24px;
 
-.portfolio-item {}
+   
+}
 
-.portfolio-image {}
+.portfolio-item {
+
+    width: calc((100% - 2 * 24px) / 3);
+  /* border: 1px solid transparent; */
+    padding-bottom: 32px;
+  
+}
+
+.portfolio-image {
+    display: block; 
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 32px;
+    
+}
 
 .portfolio-subtitle {
     
@@ -243,6 +332,8 @@ background-color: #f4f4fd;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
+        margin-left: 16px;
 }
 
 .portfolio-text {
@@ -251,19 +342,23 @@ background-color: #f4f4fd;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-       
+        margin-left: 16px;
 }
+
 
 
 /* footer */
 
 .page-footer {
     background-color: #2e2f42;
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* padding-left: 156px; */
 }
 
 .footer-logo .logo-part {
     color: #f4f4fd;
+    
 }
 
 .page-footer-text {
@@ -273,4 +368,6 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+width: 264px;
+margin-top: 16px;
 }
