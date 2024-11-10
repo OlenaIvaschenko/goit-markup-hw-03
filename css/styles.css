@@ -378,12 +378,19 @@ padding-bottom:120px;
     /* padding-left: 156px; */
 }
 
-.footer-logo .logo-part {
-    display: inline-block; 
-    margin-bottom: 16px;
+.logo-part {
     color: #f4f4fd;
     
 }
+
+.footer-logo {
+    display: inline-block; 
+    margin-bottom: 16px;
+    
+ 
+}
+
+
 
 .page-footer-text {
    
@@ -393,5 +400,5 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
 width: 264px;
-margin-top: 16px;
+
 }
