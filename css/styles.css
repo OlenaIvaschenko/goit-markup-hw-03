@@ -123,11 +123,11 @@ font-family: "Raleway", sans-serif;
 
 .hero {
     background-color: #2e2f42;
-}
-.hero-container {
     padding-top: 188px;
     padding-bottom: 188px;
-   
+}
+.hero-container {
+
 }
 
 .hero-text {
@@ -179,11 +179,12 @@ background-color: #404bbf;
 
 /* Section benefits */
 
-.benefits {}
-
-.benefits-container {
+.benefits {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.benefits-container {
    
 }
 .benefits-title{
